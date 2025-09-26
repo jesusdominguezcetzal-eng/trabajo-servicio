@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Restaurante de Mariscos</title>
+  <title>Contacto - Servicios Web</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome (para íconos de redes sociales) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -76,10 +80,19 @@
     }
     .socials a {
       text-decoration: none;
-      font-size: 1.2rem;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
+      font-size: 1.5rem;
+      padding: 0.8rem 1rem;
+      border-radius: 50%;
       color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      transition: transform 0.3s;
+    }
+    .socials a:hover {
+      transform: scale(1.1);
     }
     .fb { background: #3b5998; }
     .wa { background: #25d366; }
@@ -110,8 +123,6 @@
 
   <nav>
     <a href="index.html">Inicio</a>
-    <a href="menu.html">Menú</a>
-    <a href="nosotros.html">Nosotros</a>
     <a href="servicios.html">Servicios</a>
     <a href="contacto.html">Contacto</a>
   </nav>
@@ -128,19 +139,25 @@
 
     <div class="info">
       <h3>📍 Información de contacto</h3>
-      <p>📌 Dirección: Calle Mariscos #123, Ciudad, México</p>
-      <p>📞 Teléfono: (123) 456-7890</p>
-      <p>✉️ Email: contacto@restaurantedemariscos.com</p>
+      <p>📌 Dirección: Calle Ejemplo #123, Ciudad, México</p>
+      <p>✉️ Email: contacto@miserviciosweb.com</p>
 
+      <!-- Redes sociales con íconos -->
       <div class="socials">
-        <a href="https://facebook.com" target="_blank" class="fb">📘 Facebook</a>
-        <a href="https://wa.me/5211234567890" target="_blank" class="wa">💬 WhatsApp</a>
+        <a href="https://facebook.com" target="_blank" class="fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/5211234567890" target="_blank" class="wa">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
 
       <!-- Botón para regresar a Servicios -->
-      <a href="servicios.html" class="back-services">⬅ Ver Paquetes y Servicios</a>
+      <a href="index.html" class="back-services">⬅ Ver Paquetes y Servicios</a>
     </div>
   </div>
 
 </body>
 </html>
+
+
