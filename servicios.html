@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Web - Paquetes</title>
+  <style>
+    :root {
+      --primary:#004c4c;
+      --secondary:#007777;
+      --light:#f2f2f2;
+      --accent:#ffb347;
+    }
+
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: var(--light);
+      color:#333;
+    }
+
+    header {
+      background: var(--primary);
+      color:white;
+      padding:2rem;
+      text-align:center;
+    }
+
+    header h1 { margin:0; }
+    header p { margin-top:0.5rem; }
+
+    section {
+      padding:3rem 2rem;
+      max-width:1100px;
+      margin:auto;
+      text-align:center;
+    }
+
+    .pricing {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap:2rem;
+    }
+
+    .card {
+      background:white;
+      border-radius:12px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      padding:2rem;
+      transition:transform 0.3s;
+      text-align:left;
+    }
+    .card:hover { transform:scale(1.03); }
+
+    .card h2 {
+      color:var(--primary);
+      margin-bottom:0.5rem;
+      text-align:center;
+    }
+
+    .price {
+      font-size:1.8rem;
+      color:var(--secondary);
+      margin:1rem 0;
+      text-align:center;
+    }
+
+    ul {
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    ul li {
+      margin:0.5rem 0;
+      font-size:0.95rem;
+      line-height:1.5;
+    }
+    ul li::before {
+      content:"✔ ";
+      color:var(--accent);
+      font-weight:bold;
+    }
+
+    .btn {
+      display:block;
+      margin:1.5rem auto 0;
+      padding:0.7rem 1.2rem;
+      background:var(--secondary);
+      color:white;
+      border-radius:6px;
+      text-align:center;
+      text-decoration:none;
+      transition: background 0.3s;
+      width:max-content;
+    }
+    .btn:hover { background:var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Servicios Web</h1>
+    <p>Elige el paquete que mejor se adapte a tus necesidades</p>
+  </header>
+
+  <section>
+    <div class="pricing">
+      <!-- Paquete Básico -->
+      <div class="card">
+        <h2>Básico</h2>
+        <p class="price">$350 MXN</p>
+        <ul>
+          <li>1 página simple (Landing page) con diseño limpio.</li>
+          <li>Secciones: Bienvenida, servicios básicos y contacto rápido.</li>
+          <li>Diseño responsivo (adaptado a celular y computadora).</li>
+          <li>Formulario de contacto básico (nombre, correo y mensaje).</li>
+          <li>Entrega rápida (2–3 días hábiles).</li>
+          <li>Conexión a un correo de contacto.</li>
+        </ul>
+        <a href="contacto.html" class="btn">Contratar</a>
+      </div>
+
+      <!-- Paquete Estándar -->
+      <div class="card">
+        <h2>Estándar</h2>
+        <p class="price">$700 MXN</p>
+        <ul>
+          <li>Hasta 3 páginas (ejemplo: Inicio, Servicios, Contacto).</li>
+          <li>Diseño personalizado con imágenes y secciones extra.</li>
+          <li>Optimización responsive completa.</li>
+          <li>Formulario de contacto avanzado (nombre, teléfono, correo, mensaje).</li>
+          <li>Integración básica de redes sociales (Facebook, WhatsApp, Instagram).</li>
+          <li>Mapa de ubicación con Google Maps.</li>
+          <li>Entrega en 4–6 días hábiles.</li>
+        </ul>
+        <a href="contacto.html" class="btn">Contratar</a>
+      </div>
+
+      <!-- Paquete Avanzado -->
+      <div class="card">
+        <h2>Avanzado</h2>
+        <p class="price">$1,200 MXN</p>
+        <ul>
+          <li>Sitio multipágina profesional (Inicio, Menú/Servicios, Nosotros, Contacto, etc.).</li>
+          <li>Diseño avanzado con animaciones y efectos.</li>
+          <li>Optimización SEO básica (mejor visibilidad en Google).</li>
+          <li>Integración con WhatsApp y Facebook Messenger.</li>
+          <li>Soporte prioritario durante el primer mes.</li>
+          <li>Opciones extra a elegir:</li>
+          <ul>
+            <li>Reservaciones en línea.</li>
+            <li>Formulario de cotizaciones.</li>
+            <li>Integración de pagos en línea.</li>
+          </ul>
+          <li>Entrega en 7–10 días hábiles.</li>
+        </ul>
+        <a href="contacto.html" class="btn">Contratar</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
